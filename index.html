@@ -9,7 +9,7 @@
 <meta property="og:title" content="(주)에너픽 | 태양광 기자재 허브">
 <meta property="og:description" content="선택의 순간, 에너픽. 태양광 모듈·인버터 유통 전문기업">
 <meta property="og:image" content="hero.jpg">
-<meta name="theme-color" content="#f3f2f2">
+<meta name="theme-color" content="#ffffff">
 <link rel="preload" href="PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="modernist.css">
 <link rel="stylesheet" href="style.css">
@@ -25,10 +25,12 @@
       <span>태양광 기자재 허브</span>
     </a>
     <div class="nav-menu" id="navMenu">
-      <a href="#about">회사소개</a>
-      <a href="#module">모듈</a>
-      <a href="#inverter">인버터</a>
-      <a href="#process">공급절차</a>
+      <a href="#top">회사소개</a>
+      <a href="#about">사업 영역</a>
+      <a href="#module">모듈 라인업</a>
+      <a href="#inverter">인버터 라인업</a>
+      <a href="#why">에너픽 강점</a>
+      <a href="#process">공급 절차</a>
       <a class="btn btn-primary" href="#contact">견적 및 제품 문의</a>
     </div>
     <a class="btn btn-primary nav-cta" href="#contact">견적 및 제품 문의</a>
@@ -39,6 +41,7 @@
 <main id="main">
   <div class="wrap" id="top">
     <section class="hero">
+      <span class="kicker">About enerpick · (주)에너픽</span>
       <h1 class="display"><span class="line">선택의 순간,</span> <span class="line"><em>에너픽.</em></span></h1>
       <p class="sub">(주)에너픽은 태양광 모듈과 인버터를 국내외 주요 제조사로부터 공급하는 태양광 기자재 유통 전문기업입니다. 발전소 규모와 예산에 맞는 기자재를 골라, 필요한 시점에 현장으로 보냅니다.</p>
       <div class="row">
@@ -67,7 +70,7 @@
     <section class="section" id="about">
       <div class="sec-head">
         <div>
-          <span class="kicker">About enerpick</span>
+          <span class="kicker">Business</span>
           <h2 class="sec-title">태양광 기자재,<br>한 곳에서 고르세요.</h2>
         </div>
         <p class="sec-lead">제조사마다 다른 등급·출력·납기를 하나하나 비교할 필요가 없습니다. 에너픽이 국내외 제조사 라인업을 한 자리에 모아 현장 조건에 맞는 조합을 제안합니다.</p>
@@ -119,11 +122,11 @@
           <table class="table">
             <thead><tr><th scope="col">제조사</th><th scope="col">등급</th><th scope="col">출력</th><th scope="col">비고</th></tr></thead>
             <tbody>
-              <tr><td class="maker">현대에너지솔루션</td><td>1등급 · 2등급 · 무등급(수입자 인증)</td><td><div class="chips"><span class="chip">640W</span><span class="chip">500W</span></div></td><td><span class="tag tag-accent">1등급 640W 출시 예정</span></td></tr>
-              <tr><td class="maker">한화솔루션</td><td>2등급 · 무등급(수입자 인증)</td><td><div class="chips"><span class="chip">640W</span><span class="chip">510W</span></div></td><td class="muted">—</td></tr>
-              <tr><td class="maker">한솔테크닉스</td><td>2등급 · 무등급(수입자 인증)</td><td><div class="chips"><span class="chip">640W</span><span class="chip">500W</span></div></td><td class="muted">—</td></tr>
-              <tr><td class="maker">에스에너지</td><td>2등급 · 무등급(수입자 인증)</td><td><div class="chips"><span class="chip">640W</span><span class="chip">720W</span><span class="chip is-soon">730W</span></div></td><td><span class="tag tag-accent">730W 출시 예정</span></td></tr>
-              <tr><td class="maker">신성이엔지</td><td>무등급(수입자 인증)</td><td><div class="chips"><span class="chip">640W</span></div></td><td class="muted">—</td></tr>
+              <tr><td class="maker" data-label="제조사">현대에너지솔루션</td><td data-label="등급">1등급 · 2등급 · 무등급(수입자 인증)</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip">500W</span></div></td><td data-label="비고"><span class="tag tag-accent">1등급 640W 출시 예정</span></td></tr>
+              <tr><td class="maker" data-label="제조사">한화솔루션</td><td data-label="등급">2등급 · 무등급(수입자 인증)</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip">510W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
+              <tr><td class="maker" data-label="제조사">한솔테크닉스</td><td data-label="등급">2등급 · 무등급(수입자 인증)</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip">500W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
+              <tr><td class="maker" data-label="제조사">에스에너지</td><td data-label="등급">2등급 · 무등급(수입자 인증)</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip">720W</span><span class="chip is-soon">730W</span></div></td><td data-label="비고"><span class="tag tag-accent">730W 출시 예정</span></td></tr>
+              <tr><td class="maker" data-label="제조사">신성이엔지</td><td data-label="등급">무등급(수입자 인증)</td><td data-label="출력"><div class="chips"><span class="chip">640W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
             </tbody>
           </table>
         </div>
@@ -134,12 +137,12 @@
           <table class="table">
             <thead><tr><th scope="col">제조사</th><th scope="col">셀 기술</th><th scope="col">출력</th><th scope="col">비고</th></tr></thead>
             <tbody>
-              <tr><td class="maker">JA SOLAR</td><td class="muted">—</td><td><div class="chips"><span class="chip">640W</span></div></td><td class="muted">—</td></tr>
-              <tr><td class="maker">JINKO SOLAR<small>진코</small></td><td class="muted">—</td><td><div class="chips"><span class="chip">635W</span><span class="chip is-soon">640W</span></div></td><td><span class="tag tag-accent">640W 출시 예정</span></td></tr>
-              <tr><td class="maker">LONGI<small>론지</small></td><td>IBC (Interdigitated Back Contact)</td><td><div class="chips"><span class="chip">645W</span><span class="chip">650W</span></div></td><td class="muted">—</td></tr>
-              <tr><td class="maker">RISEN<small>라이젠</small></td><td>HJT</td><td><div class="chips"><span class="chip">640W</span><span class="chip">720W</span></div></td><td class="muted">720W HJT</td></tr>
-              <tr><td class="maker">TONGWEI<small>통웨이</small></td><td class="muted">—</td><td><div class="chips"><span class="chip">640W</span><span class="chip is-soon">730W</span></div></td><td><span class="tag tag-accent">730W 출시 예정</span></td></tr>
-              <tr><td class="maker">TRINA SOLAR<small>트리나</small></td><td class="muted">—</td><td><div class="chips"><span class="chip">710–715W</span></div></td><td class="muted">—</td></tr>
+              <tr><td class="maker" data-label="제조사">JA SOLAR</td><td class="muted is-empty" data-label="셀 기술">—</td><td data-label="출력"><div class="chips"><span class="chip">640W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
+              <tr><td class="maker" data-label="제조사">JINKO SOLAR<small>진코</small></td><td class="muted is-empty" data-label="셀 기술">—</td><td data-label="출력"><div class="chips"><span class="chip">635W</span><span class="chip is-soon">640W</span></div></td><td data-label="비고"><span class="tag tag-accent">640W 출시 예정</span></td></tr>
+              <tr><td class="maker" data-label="제조사">LONGI<small>론지</small></td><td data-label="셀 기술">IBC (Interdigitated Back Contact)</td><td data-label="출력"><div class="chips"><span class="chip">645W</span><span class="chip">650W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
+              <tr><td class="maker" data-label="제조사">RISEN<small>라이젠</small></td><td data-label="셀 기술">HJT</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip">720W</span></div></td><td class="muted" data-label="비고">720W HJT</td></tr>
+              <tr><td class="maker" data-label="제조사">TONGWEI<small>통웨이</small></td><td class="muted is-empty" data-label="셀 기술">—</td><td data-label="출력"><div class="chips"><span class="chip">640W</span><span class="chip is-soon">730W</span></div></td><td data-label="비고"><span class="tag tag-accent">730W 출시 예정</span></td></tr>
+              <tr><td class="maker" data-label="제조사">TRINA SOLAR<small>트리나</small></td><td class="muted is-empty" data-label="셀 기술">—</td><td data-label="출력"><div class="chips"><span class="chip">710–715W</span></div></td><td class="muted is-empty" data-label="비고">—</td></tr>
             </tbody>
           </table>
         </div>
@@ -161,10 +164,10 @@
       <div class="filter">
         <span class="filter-label" id="kwLabel">용량대</span>
         <div class="tabs" role="group" aria-labelledby="kwLabel">
-          <button type="button" class="tab kw-btn" data-min="0" data-max="9999" aria-pressed="true">전체</button>
-          <button type="button" class="tab kw-btn" data-min="0" data-max="69" aria-pressed="false">70kW 미만</button>
-          <button type="button" class="tab kw-btn" data-min="100" data-max="130" aria-pressed="false">100–130kW</button>
-          <button type="button" class="tab kw-btn" data-min="250" data-max="9999" aria-pressed="false">250kW 이상</button>
+          <button type="button" class="tab kw-btn" data-min="0" data-max="9999" aria-pressed="true">전체<span class="cnt">7</span></button>
+          <button type="button" class="tab kw-btn" data-min="0" data-max="69" aria-pressed="false">70kW 미만<span class="cnt">7</span></button>
+          <button type="button" class="tab kw-btn" data-min="100" data-max="130" aria-pressed="false">100–130kW<span class="cnt">6</span></button>
+          <button type="button" class="tab kw-btn" data-min="250" data-max="9999" aria-pressed="false">250kW 이상<span class="cnt">2</span></button>
         </div>
       </div>
 
@@ -172,13 +175,13 @@
         <table class="table" id="invTable">
           <thead><tr><th scope="col">제조사</th><th scope="col">용량</th></tr></thead>
           <tbody>
-            <tr><td class="maker">현대에너지솔루션</td><td><div class="chips"><span class="chip" data-kw="36">36kW</span><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="125">125kW</span><span class="chip" data-kw="250">250kW</span><span class="chip" data-kw="350">350kW</span></div></td></tr>
-            <tr><td class="maker">한화솔루션</td><td><div class="chips"><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="119">119kW</span></div></td></tr>
-            <tr><td class="maker">FOX ESS<small>폭스</small></td><td><div class="chips"><span class="chip" data-kw="65">65kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
-            <tr><td class="maker">HUAWEI<small>화웨이</small></td><td><div class="chips"><span class="chip" data-kw="50">50kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="330">330kW</span></div></td></tr>
-            <tr><td class="maker">SUNGROW<small>썬그로우</small></td><td><div class="chips"><span class="chip" data-kw="50">50kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
-            <tr><td class="maker">SOFAR<small>소파</small></td><td><div class="chips"><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
-            <tr><td class="maker">소형 인버터<small>금비전자 · 이노일렉트릭 등</small></td><td><div class="chips"><span class="chip" data-kw="10">소형 · 주택용</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">현대에너지솔루션</td><td data-label="용량"><div class="chips"><span class="chip" data-kw="36">36kW</span><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="125">125kW</span><span class="chip" data-kw="250">250kW</span><span class="chip" data-kw="350">350kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">한화솔루션</td><td data-label="용량"><div class="chips"><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="119">119kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">FOX ESS<small>폭스</small></td><td data-label="용량"><div class="chips"><span class="chip" data-kw="65">65kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">HUAWEI<small>화웨이</small></td><td data-label="용량"><div class="chips"><span class="chip" data-kw="50">50kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="330">330kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">SUNGROW<small>썬그로우</small></td><td data-label="용량"><div class="chips"><span class="chip" data-kw="50">50kW</span><span class="chip" data-kw="110">110kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">SOFAR<small>소파</small></td><td data-label="용량"><div class="chips"><span class="chip" data-kw="60">60kW</span><span class="chip" data-kw="125">125kW</span></div></td></tr>
+            <tr><td class="maker" data-label="제조사">소형 인버터<small>금비전자 · 이노일렉트릭 등</small></td><td data-label="용량"><div class="chips"><span class="chip" data-kw="10">소형 · 주택용</span></div></td></tr>
           </tbody>
         </table>
       </div>
@@ -251,10 +254,12 @@
           <h3 class="inquiry-title">견적 및 제품 문의</h3>
           <p class="inquiry-copy">아래 버튼을 누르면 문의 양식(Google Forms)이 새 창으로 열립니다. 다음 내용을 함께 적어 주시면 더 빠르게 안내해 드립니다.</p>
           <ul class="inquiry-list">
-            <li>필요한 품목 — 모듈 · 인버터 · 기타</li>
-            <li>제조사 · 등급 · 출력(용량) 희망 사항</li>
-            <li>수량과 납품 희망 시기</li>
-            <li>성함과 연락처</li>
+            <li>회사명</li>
+            <li>성함 및 연락처</li>
+            <li>필요한 품목 (모듈 · 인버터 · 기타) 및 수량</li>
+            <li>제조사 · 등급 · 출력 (용량)</li>
+            <li>납품 희망 일자</li>
+            <li>문의 사항</li>
           </ul>
           <a class="btn btn-primary btn-lg" id="inquiryLink" href="https://forms.gle/REPLACE_WITH_GOOGLE_FORM" target="_blank" rel="noopener">문의 하기 <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
         </div>

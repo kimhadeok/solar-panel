@@ -28,7 +28,7 @@
   on(toggle, 'click', function () { setMenu(toggle.getAttribute('aria-expanded') !== 'true'); });
   $$('a', menu).forEach(function (a) { on(a, 'click', function () { setMenu(false); }); });
   on(doc, 'keydown', function (e) { if ((e.key === 'Escape' || e.keyCode === 27) && menu.classList.contains('is-open')) { setMenu(false); toggle.focus(); } });
-  on(window, 'resize', function () { if (window.innerWidth > 960) setMenu(false); });
+  on(window, 'resize', function () { if (window.innerWidth > 1200) setMenu(false); });
 
   /* scroll-spy */
   var links = $$('.nav-menu a[href^="#"]:not(.btn)');
@@ -87,6 +87,9 @@
         var kw = +c.getAttribute('data-kw'), hit = kw >= min && kw <= max;
         c.classList.toggle('is-hit', !all && hit);
         c.classList.toggle('is-dim', !all && !hit);
+      });
+      $$('#invTable tbody tr').forEach(function (r) {
+        r.classList.toggle('is-hidden', !all && !$('.chip.is-hit', r));
       });
     });
   });
