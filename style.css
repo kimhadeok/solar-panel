@@ -55,6 +55,16 @@ img { height: auto; }
 .nav-menu a { white-space: nowrap; font-weight: 600; font-size: 15px; }
 .nav-menu a.is-active { color: var(--color-accent); }
 .nav .btn-primary { white-space: nowrap; }
+.btn-primary, a.btn-primary, .nav a.btn-primary { color: #ffffff; -webkit-transition: background-color .18s, color .18s; transition: background-color .18s, color .18s; }
+.btn-primary:hover, a.btn-primary:hover, .nav a.btn-primary:hover, .btn-primary:focus-visible { background: var(--color-text); color: #ffffff; }
+.btn-primary:active, a.btn-primary:active, .nav a.btn-primary:active { background: var(--color-accent-700); color: #ffffff; }
+@media (min-width: 961px) and (max-width: 1200px) {
+  .nav { gap: var(--space-3); }
+  .nav-menu { gap: var(--space-4); }
+  .nav-menu a { font-size: 14px; }
+  .nav-brand span { display: none; }
+  .nav .nav-cta { padding: 10px 14px; font-size: 14px; }
+}
 .nav-toggle { display: none; width: 44px; height: 44px; padding: 0; border: 2px solid var(--color-text); background: transparent; cursor: pointer; position: relative; -webkit-appearance: none; appearance: none; border-radius: 0; }
 .nav-toggle i, .nav-toggle i::before, .nav-toggle i::after { position: absolute; left: 10px; width: 20px; height: 2px; background: var(--color-text); content: ""; -webkit-transition: transform .2s; transition: transform .2s; }
 .nav-toggle i { top: 19px; }
@@ -64,7 +74,7 @@ img { height: auto; }
 .nav-toggle[aria-expanded="true"] i::before { -webkit-transform: translateY(6px) rotate(45deg); transform: translateY(6px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] i::after { -webkit-transform: translateY(-6px) rotate(-45deg); transform: translateY(-6px) rotate(-45deg); }
 
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
   .nav { flex-wrap: wrap; gap: var(--space-3); }
   .nav-toggle { display: block; }
   .nav .nav-cta { display: none; }
@@ -73,7 +83,7 @@ img { height: auto; }
   .nav-menu a { padding: 14px 0; font-size: 17px; border-bottom: 1px solid var(--color-divider); }
   .nav-menu .btn-primary { margin: 16px 0 6px; padding: 14px 16px; justify-content: flex-start; border-bottom: 0; color: var(--color-bg); }
 }
-@media (min-width: 1201px) { .nav-menu .btn-primary { display: none; } }
+@media (min-width: 961px) { .nav-menu .btn-primary { display: none; } }
 @media (max-width: 480px) { .nav-brand span { display: none; } }
 
 /* ── shared type ── */
