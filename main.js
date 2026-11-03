@@ -30,6 +30,22 @@
   on(doc, 'keydown', function (e) { if ((e.key === 'Escape' || e.keyCode === 27) && menu.classList.contains('is-open')) { setMenu(false); toggle.focus(); } });
   on(window, 'resize', function () { if (window.innerWidth > 960) setMenu(false); });
 
+
+  /* in-page links: always scroll to the section, even when the hash is unchanged */
+  $$('a[href^="#"]').forEach(function (a) {
+    on(a, 'click', function (e) {
+      var id = a.getAttribute('href');
+      if (id.length < 2) return;
+      var t = doc.getElementById(id.slice(1));
+      if (!t) return;
+      e.preventDefault();
+      setMenu(false);
+      var mt = parseFloat(window.getComputedStyle(t).scrollMarginTop) || 0;
+      var y = id === '#top' ? 0 : t.getBoundingClientRect().top + (window.pageYOffset || doc.documentElement.scrollTop) - header.offsetHeight - mt;
+      try { window.scrollTo({ top: y, behavior: 'smooth' }); } catch (err) { window.scrollTo(0, y); }
+      if (window.history && history.replaceState) history.replaceState(null, '', id);
+    });
+  });
   /* scroll-spy */
   var links = $$('.nav-menu a[href^="#"]:not(.btn)');
   var targets = links.map(function (a) { return $(a.getAttribute('href')); });

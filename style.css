@@ -94,7 +94,8 @@ img { height: auto; }
 .sec-lead { font-size: 16.5px; line-height: var(--leading); color: var(--ink-78); max-width: var(--measure); margin: var(--half) 0 0; }
 .sec-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--half) clamp(24px, 5vw, 96px); align-items: end; margin-bottom: calc(1.5 * var(--leading)); }
 .sec-head .sec-lead { margin: 0; }
-.section { padding: calc(3 * var(--leading)) 0; }
+.section { padding: calc(3 * var(--leading)) 0; scroll-margin-top: calc(-2 * var(--leading)); }
+#contact { min-height: calc(100vh - var(--nav-h)); -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* ── hero ── */
 .hero { padding: calc(3.5 * var(--leading)) 0 calc(2.5 * var(--leading)); }
