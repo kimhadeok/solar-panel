@@ -48,14 +48,22 @@
   });
   /* scroll-spy */
   var links = $$('.nav-menu a[href^="#"]:not(.btn)');
+  var ctas = $$('.nav a.btn-primary[href="#contact"]');
   var targets = links.map(function (a) { return $(a.getAttribute('href')); });
+  var contactEl = $('#contact');
   function spy() {
     var line = header.offsetHeight + 80, idx = -1;
     targets.forEach(function (t, i) { if (t && t.getBoundingClientRect().top <= line) idx = i; });
-    if (window.innerHeight + (window.pageYOffset || 0) >= doc.documentElement.scrollHeight - 4) idx = targets.length - 1;
+    var atContact = contactEl && (contactEl.getBoundingClientRect().top <= line ||
+      window.innerHeight + (window.pageYOffset || 0) >= doc.documentElement.scrollHeight - 4);
+    if (atContact) idx = -1;
     links.forEach(function (a, i) {
       a.classList.toggle('is-active', i === idx);
       if (i === idx) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
+    });
+    ctas.forEach(function (b) {
+      b.classList.toggle('is-active', !!atContact);
+      if (atContact) b.setAttribute('aria-current', 'location'); else b.removeAttribute('aria-current');
     });
   }
   on(window, 'scroll', onScroll, passive);
